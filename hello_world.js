@@ -1,1 +1,3 @@
-logger.info("Hello $name!")
+def msg = "Hello $name!"
+logger.info(msg)
+msg
