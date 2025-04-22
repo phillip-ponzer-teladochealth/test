@@ -1,1 +1,1 @@
-logger.info("Hello World!")
+logger.info("Hello $name!")
