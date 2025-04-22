@@ -1,0 +1,1 @@
+Cloud has a built in Customfield for this, create a new field type of (Username of last updater or commenter' naming it 'Last Updater Author' adding it every where that the field 'Last Comment Author' from Data Center is located.
