@@ -1,0 +1,1 @@
+jiraHelper.project?.key != "CHG"
