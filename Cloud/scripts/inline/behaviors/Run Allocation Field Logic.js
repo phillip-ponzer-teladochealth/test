@@ -7,11 +7,11 @@
 */
  
 // Fetch the 5 RUN Fields
-const engDepartmentField = getFieldById("customfield_10045");
-const engPlatformField = getFieldById("customfield_10046");
-const runTypeField = getFieldById("customfield_10047");
-const deployedLocationField = getFieldById("customfield_10048");
-const deployedProductField = getFieldById("customfield_10049");
+const engDepartmentField = getFieldById("customfield_10045"); // "Eng - Department"
+const engPlatformField = getFieldById("customfield_10046"); // "Eng - Platform"
+const runTypeField = getFieldById("customfield_10047"); // "RUN Type"
+const deployedLocationField = getFieldById("customfield_10048"); // "Deployed Location"
+const deployedProductField = getFieldById("customfield_10049"); // "Deployed Product"
  
 // Make the RUN fields optional and hidden
 engDepartmentField?.setRequired(false)
@@ -33,7 +33,7 @@ if (parentValue != null) {
  
     // Fetch the "Build/Run" field value of the Parent Issue object
     const parentIssue = await makeRequest("/rest/api/2/issue/" + parentValue.key);
-    const parentBuildRun = parentIssue.body.fields.customfield_10044.value;
+    const parentBuildRun = parentIssue.body.fields.customfield_10044.value; // "Build/Run"
  
     // If the parent "Build/Run" field is set to "Supporting"
     if (parentBuildRun == "Supporting") {

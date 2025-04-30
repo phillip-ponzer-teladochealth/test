@@ -6,9 +6,9 @@ import groovy.time.TimeCategory
 
 /*Author: Jeff Melies
 Purpose: Captures Time to Resolution. 
-        Using the issues status categories define a start and end datetime, we search the history of the ticket 
-        and calculate the time between them.  You can also exclude weekends and define the
-        results in milliseconds, seconds, minutes, hours, or days.
+         Using the issues status categories define a start and end datetime, we search the history of the ticket 
+         and calculate the time between them. You can also exclude weekends and define the
+         results in milliseconds, seconds, minutes, hours, or days.
 Change log: (4/21/2025) Phillip Ponzer Converted to Cloud
 */
 

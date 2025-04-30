@@ -9,5 +9,5 @@ Change log: 2025-04-29 Phillip Ponzer - Converted to Jira Cloud
 /*
 TODO: Update custom field IDs
 */
-getFieldById("customfield_10083").setDescription("UI Design notes and links to Figma files.")
-getFieldById("customfield_10104").setDescription("Designer responsible.")
+getFieldById("customfield_10083").setDescription("UI Design notes and links to Figma files.") // "Design/Content Notes"
+getFieldById("customfield_10104").setDescription("Designer responsible.") // "Designer"

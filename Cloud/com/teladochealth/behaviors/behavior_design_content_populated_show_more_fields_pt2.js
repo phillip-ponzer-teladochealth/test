@@ -15,13 +15,13 @@ var designContentStatus = null
 if( changedField && changedField.getName() === "Design/Content Status" ) {
     designContentStatus = changedField.getValue()
 } else {
-    designContentStatus = getFieldById("customfield_10082").getValue()
+    designContentStatus = getFieldById("customfield_10082").getValue() // "Design/Content Status"
 }
 
-const designContentNotes = getFieldById("customfield_10083")
-const designer = getFieldById("customfield_10104")
-const designContentApprovals = getFieldById("customfield_10119")
-const contentStrategist = getFieldById("customfield_10118")
+const designContentNotes = getFieldById("customfield_10083") // "Design/Content Notes"
+const designer = getFieldById("customfield_10104") // "Designer"
+const designContentApprovals = getFieldById("customfield_10119") // "Design/Content Approvals"
+const contentStrategist = getFieldById("customfield_10118") // "Content Strategist"
 if( designContentStatus && designContentStatus.value !== "No Design Needed" ) {
     designContentNotes.setVisible(true)
     designer.setVisible(true)

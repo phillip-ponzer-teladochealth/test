@@ -15,10 +15,10 @@ var reqRSVEUpdate = null
 if( changedField && changedField.getName() === "Requires RS/VE Update" ) {
     reqRSVEUpdate = changedField.getValue()
 } else {
-    reqRSVEUpdate = getFieldById("customfield_10532").getValue()
+    reqRSVEUpdate = getFieldById("customfield_10532").getValue() // "Requires RS/VE Update"
 }
 
-const reqDocField = getFieldById("customfield_10533")
+const reqDocField = getFieldById("customfield_10533") // "Requirements Documentation"
 if( reqRSVEUpdate && reqRSVEUpdate.value === "Yes" ) {
     reqDocField.setVisible(true)
     reqDocField.setRequired(true)
