@@ -3,9 +3,8 @@ import re
 
 import requests
 
-JIRA_CLOUD_URL = "https://teladochealth-sandbox.atlassian.net"
-JIRA_CLOUD_EMAIL = "FIRSTNAME.LASTNAME@teladochealth.com"
-JIRA_CLOUD_TOKEN = "YOUR_TOKEN_GOES_HERE"
+from settings import JIRA_CLOUD_URL, JIRA_CLOUD_EMAIL, JIRA_CLOUD_TOKEN
+
 
 session = requests.session()
 session.auth = (JIRA_CLOUD_EMAIL, JIRA_CLOUD_TOKEN)
@@ -45,6 +44,7 @@ def main():
                     needs_update = True
 
         if needs_update:
+            print(f"Updating file: {code_file}")
             with open(code_file, "w", newline="", encoding="utf-8") as file:
                 file.writelines(lines)
 
